@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
           title.textContent = project.title;
           cardContent.appendChild(title);
 
+          // Create button container div
+          const buttonContainer = document.createElement("div");
+          buttonContainer.classList.add("btcon");
+
           // Create and set "Read More" button
           const readMore = document.createElement("a");
           readMore.href = `project.html?index=${index}&title=${encodeURIComponent(
@@ -45,8 +49,18 @@ document.addEventListener("DOMContentLoaded", () => {
           readMore.classList.add("btn");
           readMore.textContent = "Read More";
 
+          // Create and set "Open Link" button
+          const Go_Link = document.createElement("a");
+          Go_Link.href = project.link;
+          Go_Link.classList.add("btn");
+          Go_Link.textContent = "Open Link";
+
           // Append title and button to card content, then to card
-          cardContent.appendChild(readMore);
+          buttonContainer.appendChild(readMore);
+          buttonContainer.appendChild(Go_Link);
+
+          // Append the button container and other elements to the card
+          cardContent.appendChild(buttonContainer);
           card.appendChild(cardContent);
 
           // Append card to container
@@ -72,4 +86,22 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     })
     .catch((error) => console.error("Error loading projects:", error));
+});
+
+
+
+// making navbar responsive
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  console.log("hambuger is pressed");
+  navLinks.classList.toggle('active');
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    navLinks.classList.remove('active');  // Ensure the menu is hidden on larger screens
+  }
 });

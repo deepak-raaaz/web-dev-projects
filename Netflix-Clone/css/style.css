@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: black;
+    color: white;
+}
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(images/header-image.png);
+    background-size: 100% 100%;
+    padding: 10px 8%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0%;
+}
+.logo {
+    width: 180px;
+    cursor: pointer;
+    position: relative;
+    top: 2vh;
+    right: 4%;
+}
+nav button {
+    border: 0;
+    outline: 0;
+    background-color: rgb(255, 34, 0);
+    color: white;
+    border-radius: 4px;
+    padding: 7px 20px;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 2vh;
+}
+.header-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    /* iske baare me padhna ha */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1 {
+    font-size: 60px;
+    /* iske baare me padhna ha */
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+    margin-bottom: 0;
+}
+.header-content h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.email-signup {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    /* iske baare me bhi padhna ha  */
+    overflow: hidden;
+}
+.email-signup input {
+    /* iske baare me bhi padhna ha  */
+    flex: 1;
+    border: 0;
+    outline: 0;
+    padding-left: 15px;
+    font-size: 22px;
+}
+::selection {
+    background-color: rgba(255, 19, 62, 0.669);
+}
+.email-signup button {
+    background-color: rgb(255, 42, 42);
+    border: 0;
+    outline: 0;
+    font-size: 16;
+    cursor: pointer;
+    color: white;
+    padding: 15px 30px;
+}
+.features {
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* iske baare me bhi padhna ha  */
+    flex-wrap: wrap;
+}
+.text-col {
+    flex-basis: 55%;
+    margin-bottom: 80px;
+}
+.img-col {
+    flex-basis: 45%;
+    margin-bottom: 80px;
+}
+.img-col img {
+    width: 100%;
+    /* iske baare ma bhi padhna ha  */
+    margin: auto;
+}
+.text-col h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.ShareButton .share a {
+    color: white;
+}
+
+.content {
+    padding: 8px 90px;
+}
+.footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.footer-links li a:hover {
+    color: white;
+}

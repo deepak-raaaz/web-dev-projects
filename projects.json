@@ -12,6 +12,12 @@
         "readme": "/To-Do-List-App/README.md"
     },
     {
+  "thumbnail": "/thumbnails/memory-matching-game.png",
+  "title": "Memory Matching Game",
+  "link": "/Memory Matching Game/index.html",
+  "readme": "/Memory Matching Game/README.md"
+},
+    {
         "thumbnail": "/thumbnails/quiz-app-thumbnail.png",
         "title": "Quiz App",
         "link": "/Quiz-App/index.html",
@@ -54,6 +60,13 @@
         "readme": "/Animated-Login-Page/README.md"
     },
     {
+
+        "thumbnail": "/thumbnails/bootstrap-project.png",
+        "title": "Bootstrap Landing Page",
+        "link": "/bootstrap-project/index.html",
+        "readme": "/bootstrap-project/README.md"
+},
+  {
         "thumbnail": "/thumbnails/calculator-thumbnail.png",
         "title": "Calculator",
         "link": "/Calculator/index.html",
@@ -70,6 +83,12 @@
         "title": "Little Taco Shop",
         "link": "/littletacoshop/index.html",
         "readme": "/littletacoshop/README.md"
+      },
+    {
+        "thumbnail": "/thumbnails/littletacoshopupdated.png",
+        "title": "Little Taco Shop Updated",
+        "link": "/littletacoshopupdated/index.html",
+        "readme": "/littletacoshopupdated/README.md"
     },
     {
         "thumbnail": "/thumbnails/gym-animating.png",
@@ -84,9 +103,24 @@
         "readme": "/Mindshambo/README.md"
     },
     {
+<<<<<<< HEAD
         "thumbnail": "/thumbnails/zervebox-thumbnail.png",
         "title": "ZerveBox",
         "link": "/zervebox/index.html",
         "readme": "/zervebox/README.md"
+=======
+
+        "thumbnail": "/thumbnails/guess-the-number-2-player-thumbnail.png",
+        "title": "Guess The Number 2 Player Mode",
+        "link": "./guess-the-number-2-player/index.html",
+        "readme": "/guess-the-number-2-player/README.md"
+},
+  {
+        "thumbnail": "/thumbnails/Netflix-Clone.png",
+        "title": "Netflix Clone",
+        "link": "./Netflix-Clone/Netflix.html",
+        "readme": "/Netflix-Clone/README.md"
+
+>>>>>>> 69317125ae9a0065a793b2df2343df3f8a25430e
     }
 ]

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Shivam Kumar Gupta">
+        <meta name="description" content="This is my first project for HTML5.">
+        <title>LTS Contact</title>
+        <link rel="icon" href="img/tacoslogo2.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="mainproject.css">
+        <script src="main.js" defer></script>
+    </head>
+
+    <body>
+       <header class="header">
+        <h1 class="header__h1">Little Taco Shop</h1>
+        <nav aria-label="primary navigation" class="header__nav">
+            <ul class="header__ul">
+                <li><a href="/">Home</a></li>
+                <li><a href="#/about1.html">About </a></li>
+                <li><a href="#/menu">Our Menu</a></li>
+                <li><a href="hours.html">Hours</a></li>
+            </ul>
+        </nav>
+    </header> 
+        <section>
+        <figure>    
+            <img src="img2/tacos close up.jpg" alt="Tray of tacos." title="We love tray of tacos." width="1000" height="649">
+            <figcaption class="offscreen">
+                Tray of Tacos
+            </figcaption>
+        </figure>
+        </section>
+          
+
+        <main class="main">
+
+            <article class="main__article">
+                <h2>Our Location</h2>
+                <address> Av. Ribera de San Cosme 56, San Rafael <br>
+                    Cuauhtémoc, 06470 Ciudad de México <br>
+                     CDMX, Mexico
+                    <br>
+                Phone : <a href="tel:55555555">+55555555</a></address>
+            </article>
+            <hr>
+            <article class="main__article contact">
+              <h2 class="contact__h2">Our Contact Form</h2>
+              
+              <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend>Send us a message.</legend>
+                    <p class="contact__p">
+                    <label class="contact__label" for="name">Name:</label>
+                    <input class="contact__input" type="text" id="name" name="name" placeholder="Your Name" required>
+                </p>
+                <p class="contact__p">
+                    <label class="contact__label" for="email">Email:</label>
+                    <input class="contact__input" type="email" id="email" name="email" placeholder="Your Email" required>
+                </p>
+                <p class="contact__p">
+                    <label class="contact__label" for="tel">Phone No:</label>
+                    <input class="contact__input" type="tel" id="tel" name="tel" placeholder="Your Phone No." required>
+                </p>
+                <p class="contact__p">
+                    <label class="contact__label" for="message">Your Message</label>
+                    <br>
+                    <textarea class="contact__textarea" name="message" id="message" rows="00" cols="50" placeholder="Type your message here."></textarea>
+                </p>
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
+                </fieldset>
+            </form>
+            </article>
+
+           
+             
+            <footer class="footer">
+                <p> 
+                    <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+                    <span class="nowrap">Little Taco Shop</span>
+                </p>
+            </footer>
+        </main>

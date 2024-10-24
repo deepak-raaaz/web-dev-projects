@@ -10,9 +10,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav id="top" class="navbar">
         <div class="brand">
-          <a href="/">Web-Dev</a>
+          <div>Web-Dev</div>
+          <div class="menu-toggle"><button> &#9776; </button></div>
         </div>
         <ul class="nav-links">
           <li><a href="/">Home</a></li>
@@ -38,7 +39,15 @@
         <div class="card-container" id="cardContainer"></div>
       </div>
     </div>
+
+    <div class="gotop">
+      <a href="#top">
+        <img src="./uparrow.jpg" alt="arrow not found" class="toparrow"/>
+        <p>Go to top</p>
+      </a>
+    </div>
     <footer>
+
       <div class="footer-links">
           <a href="./about.html">About Us</a>
           <a href="#contact">Contact</a>
