@@ -82,5 +82,11 @@
         "title": "Mindshambo",
         "link": "./Mindshambo/index.html",
         "readme": "/Mindshambo/README.md"
+    },
+    {
+        "thumbnail": "/thumbnails/zervebox-thumbnail.png",
+        "title": "ZerveBox",
+        "link": "/zervebox/index.html",
+        "readme": "/zervebox/README.md"
     }
 ]
