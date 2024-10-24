@@ -103,6 +103,12 @@
         "readme": "/Mindshambo/README.md"
     },
     {
+<<<<<<< HEAD
+        "thumbnail": "/thumbnails/zervebox-thumbnail.png",
+        "title": "ZerveBox",
+        "link": "/zervebox/index.html",
+        "readme": "/zervebox/README.md"
+=======
 
         "thumbnail": "/thumbnails/guess-the-number-2-player-thumbnail.png",
         "title": "Guess The Number 2 Player Mode",
@@ -115,5 +121,6 @@
         "link": "./Netflix-Clone/Netflix.html",
         "readme": "/Netflix-Clone/README.md"
 
+>>>>>>> 69317125ae9a0065a793b2df2343df3f8a25430e
     }
 ]
