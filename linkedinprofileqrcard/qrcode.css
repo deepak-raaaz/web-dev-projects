@@ -1,0 +1,84 @@
+/* styles.css */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F8F8F9;
+    font-family: Arial, sans-serif;
+}
+
+/* QR Card styling */
+.qr-card {
+    background: linear-gradient(135deg, #111439, #4a6fa5, #111439);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    background-color: #111439;
+    width: 280px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+    
+}
+
+@keyframes gradientAnimation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* QR Code placeholder styling */
+.qr-card .qr-code img {
+    margin-top: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Card information styling */
+.qr-card .card-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.qr-card .card-info p {
+    font-size: 14px;
+    color: white;
+}
+
+/* Hover and transition effects */
+.qr-card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .qr-card {
+        width: 90%;
+        padding: 16px;
+    }
+
+    .qr-card .qr-code img {
+        width: 120px;
+        height: 120px;
+    }
+}
