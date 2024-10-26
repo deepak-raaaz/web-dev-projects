@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guess The Number - 2 Player Mode</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Press+Start+2P:regular"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Bungee:regular"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=VT323:regular"
+            rel="stylesheet"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./favicon/favicon-32x32.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+
+    <body>
+        <button id="setRange">Set range</button>
+        <div class="overlay hidden"></div>
+        <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <br />
+            <form>
+                <label for="rangeMin">Minimum Range: </label>
+                <input type="number" inputmode="numeric" id="rangeMin" />
+                <br /><br />
+                <label for="rangeMax">Maximum Range: </label>
+                <input type="number" inputmode="numeric" id="rangeMax" />
+                <br /><br />
+                <button id="rangeSubmit">Submit</button>
+            </form>
+        </div>
+        <p class="between">
+            (Between <span id="min"></span> - <span id="max"></span>)
+        </p>
+        <section>
+            <div class="container player1">
+                <h2>Player 1</h2>
+                <div class="number-line"></div>
+                <div class="container-number1">
+                    <p id="randomNumber1">?</p>
+                </div>
+                <div class="container-input1">
+                    <input type="number" id="number1" inputmode="numeric" />
+                    <button id="guess1">Guess!</button>
+                </div>
+                <div class="status1">
+                    <p>Status: <span id="statusText1">?</span></p>
+                    <p>Guesses: <span id="guessesText1">0</span></p>
+                </div>
+            </div>
+
+            <div class="container player2 inactive">
+                <h2>Player 2</h2>
+                <div class="container-number2">
+                    <div class="number-line"></div>
+                    <p id="randomNumber2">?</p>
+                </div>
+                <div class="container-input2">
+                    <input type="number" id="number2" inputmode="numeric" />
+                    <button id="guess2">Guess!</button>
+                </div>
+                <div class="status2">
+                    <p>Status: <span id="statusText2">?</span></p>
+                    <p>Guesses: <span id="guessesText2">0</span></p>
+                </div>
+            </div>
+        </section>
+        <button id="restartButton">Again!</button>
+        <script src="index.js"></script>
+    </body>
+</html>

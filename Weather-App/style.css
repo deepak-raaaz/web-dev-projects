@@ -1,29 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-color: #252432;
+    display: flex;              /* Enable flexbox on body */
+    flex-direction: column;     /* Arrange child elements vertically */
+    min-height: 100vh;         /* Make body at least the height of the viewport */
 }
-.card{
+
+.card {
     width: 90%;
     max-width: 470px;
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
-    margin: 100px auto 0;
+    margin: 100px auto 0;     /* Margin at the top and auto margin on the sides */
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+    flex: 1;                   /* Allow card to grow and take available space */
 }
-.search{
+
+.search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.search input{
+
+.search input {
     border: 0;
     outline: 0;
     background-color: #ebfffc;
@@ -35,7 +43,8 @@ body{
     margin-right: 16px;
     font-size: 18px;
 }
-.search button{
+
+.search button {
     border: 0;
     outline: 0;
     background-color: #ebfffc;
@@ -47,54 +56,120 @@ body{
     justify-content: center;
     align-items: center;
 }
-.search button img{
+
+.search button img {
     width: 16px;
 }
-.weather-icon{
+
+.weather-icon {
     width: 170px;
     margin-top: 30px;
 }
-.weather h1{
+
+.weather h1 {
     font-size: 80px;
     font-weight: 500;
 }
-.weather h2{
+
+.weather h2 {
     font-size: 45px;
     font-weight: 500;
     margin-top: -10px;
 }
-.details{
+
+.details {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 50px;
 }
-.col{
+
+.col {
     display: flex;
     align-items: center;
     text-align: left;
 }
-.col img{
+
+.col img {
     width: 40px;
     margin-right: 10px;
 }
-.humidity, .wind{
+
+.humidity, .wind {
     font-size: 28px;
     margin-top: -6px;
 }
-.weather{
+
+.weather {
     display: none;
 }
-.error{
+
+.error {
     text-align: left;
     margin-left: 10px;
     font-size: 14px;
     margin-top: 14px;
     display: none;
 }
-.min_max_temp{
+
+.min_max_temp {
     font-weight: 400;
     margin-top: -20px;
     margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;                /* Full width */
+    background-color: rgb(12, 12, 12); /* Dark background */
+    color: white;               /* Text color */
+    text-align: center;         /* Center text */
+    padding: 20px 0;           /* Padding for spacing */
+    margin-top: auto;           /* Push footer to the bottom */
+}
+
+.footer-links {
+    margin-bottom: 10px;        /* Space between links and icons */
+}
+
+.footer-links a {
+    color: white;               /* Link color */
+    text-decoration: none;      /* Remove underline */
+    margin: 0 15px;             /* Space between links */
+    transition: color 0.2s;     /* Smooth transition for hover */
+}
+
+.footer-links a:hover {
+    color: rgb(100, 100, 255); /* Hover color */
+}
+
+.social-icons {
+    margin-bottom: 10px;        /* Space between icons and copyright text */
+}
+
+.social-icons a {
+    color: white;               /* Icon color */
+    margin: 0 10px;             /* Space between icons */
+    font-size: 24px;            /* Icon size */
+    transition: color 0.2s;     /* Smooth transition for hover */
+}
+
+.social-icons a:hover {
+    color: rgb(100, 100, 255); /* Hover color */
+}
+
+/* Optional Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 0;        /* Reduced padding for smaller screens */
+    }
+
+    .footer-links a {
+        margin: 0 10px;         /* Reduced margin for smaller screens */
+    }
+
+    .social-icons a {
+        margin: 0 5px;          /* Reduced margin for smaller screens */
+    }
 }

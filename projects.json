@@ -53,15 +53,31 @@
         "link": "/Animated-Login-Page/index.html",
         "readme": "/Animated-Login-Page/README.md"
     },
+    {
 
+        "thumbnail": "/thumbnails/bootstrap-project.png",
+        "title": "Bootstrap Landing Page",
+        "link": "/bootstrap-project/index.html",
+        "readme": "/bootstrap-project/README.md"
+},
+  {
+        "thumbnail": "/thumbnails/calculator-thumbnail.png",
+        "title": "Calculator",
+        "link": "/Calculator/index.html",
+        "readme": "/Calculator/README.md"
+    },
+    {
+        "thumbnail": "/thumbnails/nike-thumbnail.png",
+        "title": "Nike Old Clone",
+        "link": "/nike/index.html",
+        "readme": "/nike/README.md"
+    },
     {
         "thumbnail": "/thumbnails/littletacoshop-thumbnail.png",
         "title": "Little Taco Shop",
         "link": "/littletacoshop-directory/index.html",
         "readme": "/littletacoshop-directory/README.md"
       },
-
-
     {
         "thumbnail": "/thumbnails/littletacoshopupdated.png",
         "title": "Little Taco Shop Updated",
@@ -74,5 +90,31 @@
         "title": "Linked IN Profile QR Card",
         "link": "/linkedinprofileqrcard-directory/index.html",
         "readme": "/linkedinprofileqrcard-directory/README.md"
-      }
+      },
+    {
+        "thumbnail": "/thumbnails/gym-animating.png",
+        "title": "gym-animating",
+        "link": "/gym-animating/index.html",
+        "readme": "/gym-animating/README.md"
+    },
+    {
+        "thumbnail": "/thumbnails/mindshambo-thumbnail.png",
+        "title": "Mindshambo",
+        "link": "./Mindshambo/index.html",
+        "readme": "/Mindshambo/README.md"
+    },
+    {
+
+        "thumbnail": "/thumbnails/guess-the-number-2-player-thumbnail.png",
+        "title": "Guess The Number 2 Player Mode",
+        "link": "./guess-the-number-2-player/index.html",
+        "readme": "/guess-the-number-2-player/README.md"
+},
+  {
+        "thumbnail": "/thumbnails/Netflix-Clone.png",
+        "title": "Netflix Clone",
+        "link": "./Netflix-Clone/Netflix.html",
+        "readme": "/Netflix-Clone/README.md"
+
+    }
 ]

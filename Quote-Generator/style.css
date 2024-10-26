@@ -1,75 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
 }
-body{
+
+body {
     background: #bbc6fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
 }
-.quote-box{
+
+.quote-box {
     background: #fff;
     width: 700px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: auto; /* Center the container horizontally */
     padding: 40px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    flex: 1; /* Allows the quote-box to grow and take available space */
 }
-.quote-box h2{
+
+.quote-box h2 {
     font-size: 32px;
     margin-bottom: 40px;
     position: relative;
 }
-.quote-box h2::after{
+
+.quote-box h2::after {
     content: '';
-    width:  75px;
+    width: 75px;
     height: 3px;
     border-radius: 3px;
-    background: rgb(23,124,229);
+    background: rgb(23, 124, 229);
     position: absolute;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
 }
-.quote-box blockquote{
+
+.quote-box blockquote {
     font-size: 26px;
     min-height: 110px;
 }
-.quote-box blockquote::before, .quote-box blockquote::after{
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
     content: '"';
 }
-.quote-box span{
+
+.quote-box span {
     display: block;
     margin-top: 10px;
     float: right;
     position: relative;
 }
-.quote-box span::before{
+
+.quote-box span::before {
     content: '';
     width: 20px;
     height: 2px;
-    background: rgb(23,124,229);
+    background: rgb(23, 124, 229);
     position: absolute;
     top: 50%;
     left: -50%;
 }
-.quote-box div{
+
+.quote-box div {
     width: 100%;
     margin-top: 50px;
     display: flex;
     justify-content: center;
 }
-.quote-box button{
-    background: rgb(23,124,229);
+
+.quote-box button {
+    background: rgb(23, 124, 229);
     color: #fff;
     border-radius: 25px;
-    border: 1px solid rgb(23,124,229);
-    width: 150px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px; /* Adjusted width for consistency */
     height: 50px;
     display: flex;
     align-items: center;
@@ -77,11 +90,52 @@ body{
     margin: 5px;
     cursor: pointer;
 }
-.quote-box button img{
+
+.quote-box button img {
     width: 20px;
     margin-right: 10px;
 }
-.quote-box button:nth-child(2){
+
+.quote-box button:nth-child(2) {
     background: transparent;
     color: #333;
+}
+
+/* Footer Styles */
+footer {
+    width: 100%; /* Full width */
+    background-color: rgb(12, 12, 12);
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Padding for spacing */
+}
+
+.footer-links {
+    margin-bottom: 10px; /* Space between links and icons */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Space between links */
+    transition: color 0.2s; /* Smooth transition */
+}
+
+.footer-links a:hover {
+    color: rgb(100, 100, 255); /* Hover color */
+}
+
+.social-icons {
+    margin-bottom: 10px; /* Space between icons and copyright text */
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    transition: color 0.2s; /* Smooth transition */
+}
+
+.social-icons a:hover {
+    color: rgb(100, 100, 255); /* Hover color */
 }

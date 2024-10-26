@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "Pixeloid Sans";
+    src: url(./assets/font/PixeloidSans-mLxMm.ttf);
+}
+
+body {
+    height: 100vh; /* Set to 100% of the viewport height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centered content vertically */
+    gap: 20px; /* Adjusted gap for better spacing */
+    background: rgb(24, 24, 24);
+    color: white;
+    transition: 0.3s;
+    font-family: "Pixeloid Sans", monospace;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.container {
+    display: flex;
+    gap: 50px; /* Space between player and bot */
+    font-family: "Pixeloid Sans", monospace;
+    max-width: 1200px; /* Limit max width */
+    width: 100%; /* Responsive width */
+    padding: 20px; /* Padding for breathing room */
+}
+
+.container > div {
+    white-space: nowrap;
+    padding: 3rem 2rem;
+    background: rgb(12, 12, 12);
+    border: 5px solid white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    flex: 1; /* Allow divs to fill available space */
+}
+
+.container-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-player > button {
+    margin: 10px;
+    padding: 15px 30px; /* Increased padding */
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.container-player > button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+}
+
+.container-player > button:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.container-bot {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Space between status items */
+}
+
+.status p {
+    font-size: 20px;
+    padding: 2rem 1.5rem; /* Increased padding */
+    background: rgb(12, 12, 12);
+    border: 5px solid white;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+#restartButton {
+    padding: 15px 30px; /* Increased padding */
+    border: 2px solid white;
+    color: white;
+    background-color: red;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#restartButton:hover {
+    transform: translateY(-2px);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.4),
+        0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#restartButton:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.win {
+    transition: 0.3s;
+    background: rgb(0, 27, 0);
+}
+
+.draw {
+    transition: 0.3s;
+    background: rgb(27, 27, 0);
+}
+
+.lose {
+    transition: 0.3s;
+    background-color: rgb(27, 0, 0);
+}
+
+/* Footer Styles */
+footer {
+    width: 100%; /* Full width */
+    background-color: rgb(12, 12, 12);
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Padding for spacing */
+    border-top: 5px solid white; /* Top border */
+}
+
+.footer-links {
+    margin-bottom: 10px; /* Space between links and icons */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Space between links */
+    transition: color 0.2s; /* Smooth transition */
+}
+
+.footer-links a:hover {
+    color: rgb(100, 100, 255); /* Hover color */
+}
+
+.social-icons {
+    margin-bottom: 10px; /* Space between icons and copyright text */
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    transition: color 0.2s; /* Smooth transition */
+}
+
+.social-icons a:hover {
+    color: rgb(100, 100, 255); /* Hover color */
+}

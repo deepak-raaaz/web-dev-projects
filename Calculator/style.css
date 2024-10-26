@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Space out elements to push footer to bottom */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full viewport height */
+    background-color: #f7f7f7; /* Light background color */
+    font-family: "Arial", sans-serif; /* Font styling */
+    margin: 0; /* Remove default body margin */
+}
+
+.calculator {
+    background-color: #fff; /* White background for calculator */
+    padding: 20px; /* Padding inside calculator */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    max-width: 300px; /* Maximum width of calculator */
+    width: 100%; /* Full width */
+    margin: 20px 0; /* Margin above and below calculator */
+    margin-bottom: 7%;
+}
+
+#display {
+    width: 100%; /* Full width */
+    height: 50px; /* Height of display */
+    font-size: 24px; /* Font size for display */
+    text-align: right; /* Align text to right */
+    margin-bottom: 10px; /* Space below display */
+    border: none; /* No border */
+    background-color: #f1f1f1; /* Light grey background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside display */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.buttons {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    padding: 20px; /* Padding inside buttons */
+    font-size: 18px; /* Font size */
+    border: none; /* No border */
+    background-color: #e0e0e0; /* Grey background */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #d4d4d4; /* Darker grey on hover */
+}
+
+.equal {
+    grid-column: span 2; /* Span two columns */
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+}
+
+.equal:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+footer {
+    background-color: #333; /* Dark background for footer */
+    padding: 20px 0; /* Padding for the footer */
+    color: #fff; /* Text color in footer */
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Space above the footer */
+    width: 100%; /* Full width for the footer */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.footer-links {
+    margin-bottom: 15px; /* Space between links and social icons */
+}
+
+.footer-links a {
+    margin: 0 15px; /* Space between links */
+    display: inline-block; /* Inline-block for spacing */
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-links a:hover {
+    color: #0f0; /* Change color on hover */
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for social icons */
+    justify-content: center; /* Center icons */
+    margin: 10px 0; /* Space above and below icons */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Space between icons */
+    color: #fff; /* Icon color */
+    font-size: 1.5em; /* Increase icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+    color: #0f0; /* Change icon color on hover */
+}
+
+footer p {
+    margin-top: 10px; /* Space above the copyright text */
+    font-size: 0.9em; /* Smaller font size for copyright */
+}

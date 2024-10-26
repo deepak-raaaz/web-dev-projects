@@ -1,0 +1,327 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    overflow: hidden;
+}
+
+* {
+    font-family: "VT323", Arial;
+}
+
+img {
+    position: absolute;
+    z-index: 10;
+    width: 75px;
+    top: 90%;
+    left: 48%;
+    background: white;
+    border: 3px solid rgb(255, 255, 255);
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 5px 3px white;
+    color: white;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Press Start 2P", Arial;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#number1 {
+    border: 4px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 3rem;
+    width: 10rem;
+    padding: 2rem 4rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: bolder;
+    font-family: "Press Start 2P", Arial;
+    background: black;
+}
+
+#number2 {
+    border: 4px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 3rem;
+    width: 10rem;
+    padding: 2rem 4rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: bolder;
+    font-family: "Press Start 2P", Arial;
+    background: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#randomNumber1 {
+    display: inline-block;
+    background: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 5rem;
+    z-index: 2;
+    transition: 0.3s;
+    font-family: "Bungee", Arial;
+    border-radius: 20px;
+}
+
+#randomNumber2 {
+    display: inline-block;
+    background: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 5rem;
+    z-index: 2;
+    transition: 0.3s;
+    font-family: "Bungee", Arial;
+    border-radius: 20px;
+}
+
+.player1 {
+    background: #00232b;
+    border: 5px solid black;
+    border-style: none solid none none;
+    color: white;
+    transition: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+.player2 {
+    background: #220000;
+    border: 5px solid black;
+    border-style: none none none solid;
+    color: white;
+    transition: 0.2s;
+}
+
+#guess1 {
+    padding: 1rem 2rem;
+    font-size: xx-large;
+    font-family: "Press Start 2P", Arial;
+    background: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#guess1:hover {
+    background: rgb(209, 243, 255);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+#guess2 {
+    padding: 1rem 2rem;
+    font-size: xx-large;
+    font-family: "Press Start 2P", Arial;
+    background: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#guess2:hover {
+    background: rgb(255, 209, 209);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.inactive {
+    opacity: 0.9;
+    pointer-events: none;
+    background: #1f1f1f;
+}
+
+#restartButton {
+    position: absolute;
+    top: 5rem;
+    left: 45%;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: larger;
+    font-family: "Press Start 2P", Arial;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#restartButton:hover {
+    background: rgb(211, 211, 211);
+    transition: 0.5s;
+}
+
+.winner {
+    background: #5a5a00;
+}
+
+@keyframes tooHigh {
+    0% {
+        box-shadow: 0px 0px 5px 20px rgb(255, 0, 0) inset;
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px rgb(255, 0, 0) inset;
+    }
+}
+
+.tooHigh {
+    animation: tooHigh 1s linear;
+}
+
+.tooLow {
+    animation: tooLow 1s linear;
+}
+
+@keyframes tooLow {
+    0% {
+        box-shadow: 0px 0px 5px 20px rgb(0, 174, 255) inset;
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px rgb(0, 174, 255) inset;
+    }
+}
+
+.between {
+    position: absolute;
+    color: white;
+    left: 44%;
+    top: 7px;
+    z-index: 10;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: red;
+    cursor: pointer;
+}
+
+.modal > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#rangeMin {
+    width: 3rem;
+    height: 2rem;
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+#rangeMax {
+    width: 3rem;
+    height: 2rem;
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+#rangeSubmit {
+    font-size: xx-large;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#setRange {
+    position: absolute;
+    padding: 0.6rem;
+    font-family: "Press Start 2P", Arial;
+    left: 46%;
+    z-index: 5;
+    background-color: white;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#setRange:hover {
+    background: rgb(211, 211, 211);
+    transition: 0.5s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 10;
+    animation: transform 0.5s;
+}
+
+.hidden {
+    display: none;
+}

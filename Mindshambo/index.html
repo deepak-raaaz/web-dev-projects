@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mindshambo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMrIX4F+5c+5Hd6F8Y6fyy9Xdx+7x3rfWciDiQ1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+    <section class="container">
+        <div class="container-player">
+            <h2>Player</h2>
+            <button id="rockButton">Rock</button>
+            <button id="paperButton">Paper</button>
+            <button id="scissorsButton">Scissors</button>
+        </div>
+        <div class="container-bot">
+            <h2>Bot</h2>
+            <p id="message">The bot is thinking about...</p>
+            <p id="botAnswer">???</p>
+        </div>
+    </section>
+    <section class="status">
+        <button id="restartButton">Restart</button>
+        <div class="status-score">
+            <p>Current Score</p>
+            <p id="currentScore" class="status">0</p>
+        </div>
+        <div class="status-high-score">
+            <p>High Score</p>
+            <p id="highScore" class="status">0</p>
+        </div>
+        <div class="status-total-corrects">
+            <p>Total Corrects</p>
+            <p id="totalCorrects" class="status">0</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="./about.html">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#privacy">Privacy Policy</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

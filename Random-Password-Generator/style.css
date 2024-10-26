@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+    
 }
 body{
     background: #002339;
     color: #fff;
+    overflow-x: hidden;
 }
 .container{
     margin: 12%;
@@ -60,4 +62,57 @@ body{
     padding: 16px 26px;
     border-radius: 5px;
     cursor: pointer;
+}
+/* Footer Styles */
+footer {
+    width: 100%; /* Full width */
+    background-color: rgb(12, 12, 12); /* Dark background */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Padding for spacing */
+}
+
+.footer-links {
+    margin-bottom: 10px; /* Space between links and icons */
+}
+
+.footer-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Space between links */
+    transition: color 0.2s; /* Smooth transition for hover */
+}
+
+.footer-links a:hover {
+    color: rgb(100, 100, 255); /* Hover color */
+}
+
+.social-icons {
+    margin-bottom: 10px; /* Space between icons and copyright text */
+}
+
+.social-icons a {
+    color: white; /* Icon color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    transition: color 0.2s; /* Smooth transition for hover */
+}
+
+.social-icons a:hover {
+    color: rgb(100, 100, 255); /* Hover color */
+}
+
+/* Optional Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 0; /* Reduced padding for smaller screens */
+    }
+
+    .footer-links a {
+        margin: 0 10px; /* Reduced margin for smaller screens */
+    }
+
+    .social-icons a {
+        margin: 0 5px; /* Reduced margin for smaller screens */
+    }
 }

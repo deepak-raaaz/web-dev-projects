@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Arial", sans-serif;
     background-color: #f0f4f8;
     color: #333;
     line-height: 1.6;
@@ -52,7 +52,10 @@ h1 {
 /* Card container */
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted for smaller cards */
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(250px, 1fr)
+    ); /* Adjusted for smaller cards */
     gap: 20px; /* Gap between cards */
 }
 
@@ -73,7 +76,7 @@ h1 {
 /* Card image */
 .card img {
     width: 100%;
-    height: 120px; /* Reduced height for smaller cards */
+    aspect-ratio: 16 / 9;
     object-fit: cover;
 }
 
@@ -87,6 +90,14 @@ h1 {
     margin-bottom: 10px;
     color: #333;
     font-weight: 600;
+}
+
+.btcon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 /* Button styles */
@@ -106,7 +117,72 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Responsive design */
+/* General styling for the navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #357ab8;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    top: 0;
+    width: 100%;
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between brand and links */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.navbar .brand div {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li:hover {
+    color: #b7c654;
+    text-shadow: 0px 0px 5px yellow;
+    scale: 1.25;
+}
+
+/* Footer Styles */
+footer {
+    width: 100%; /* Full width */
+    background-color: rgb(12, 12, 12); /* Dark background */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Padding for spacing */
+}
+footer {
+    padding: 15px 0; /* Reduced padding for smaller screens */
+}
+
+.footer-links a {
+    margin: 0 10px; /* Reduced margin for smaller screens */
+    color: white;
+}
+
+.social-icons a {
+    margin: 0 5px; /* Reduced margin for smaller screens */
+    color: white;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem; /* Adjust title size for smaller screens */
@@ -137,4 +213,94 @@ h1 {
     .card-content h3 {
         font-size: 1.2rem; /* Adjust title size within cards */
     }
+}
+
+.gotop {
+    /* go to top button above footer*/
+
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+
+    a {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        .toparrow {
+            mix-blend-mode: multiply;
+            filter: invert(0);
+            height: 10px;
+            padding: 0;
+        }
+        p {
+            margin: -12px 0;
+            padding: 0;
+            color: black;
+        }
+    }
+}
+
+.navbar .menu-toggle {
+    display: none;
+}
+.menu-toggle.active {
+    display: none;
+}
+
+/* making navbar responsive */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        right: 0;
+        width: 200px;
+        padding-right: 40px;
+        background-color: hsla(253, 19%, 45%, 0.4);
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px white, -3px 3px 10px white, 3px -3px 10px white,
+            -3px -3px 10px white;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+
+        button {
+            cursor: pointer;
+            font-size: larger;
+            border: none;
+            outline: none;
+            background: none;
+        }
+    }
+
+    .brand {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+    .navbar .nav-links {
+        display: none;
+    }
+    .navbar .active {
+        display: block;
+        position: relative;
+        /* animation: movehamp 0.5s ease */
+    }
+    /* @keyframes movehamp {
+    from {
+      right: -200px;
+    }
+    to{
+      right: 0;
+
+    }
+  } */
 }

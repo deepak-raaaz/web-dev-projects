@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>day-6 Age Calculator</title>
+    <title>Day-6 Age Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,11 +13,30 @@
             <h1>Age <span>Calculator</span></h1>
             <div class="input-box">
                 <input type="date" id="date">
-                <button onclick="calculateAge()">calculator</button>
+                <button onclick="calculateAge()">Calculate</button>
             </div>
-            <p id="result"> </p>
+            <p id="result"></p>
         </div>
     </div>
+    
+    <!-- Enhanced Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="./about.html">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#privacy">Privacy Policy</a>
+        </div>
+        
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
