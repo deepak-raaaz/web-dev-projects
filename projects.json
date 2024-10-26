@@ -67,5 +67,12 @@
         "title": "Little Taco Shop Updated",
         "link": "/littletacoshopupdated-directory/index.html",
         "readme": "/littletacoshopupdated-directory/README.md"
+      },
+
+    {
+        "thumbnail": "/thumbnails/linkedinprofileqrcard.png",
+        "title": "Linked IN Profile QR Card",
+        "link": "/linkedinprofileqrcard-directory/index.html",
+        "readme": "/linkedinprofileqrcard-directory/README.md"
       }
 ]
