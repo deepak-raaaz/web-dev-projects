@@ -27,3 +27,5 @@ A static Amazon-like web application that replicates the user interface of Amazo
 ## Additional Information
 
 This project is intended for educational purposes, demonstrating how to build a static frontend web page that mimics a real-world e-commerce site layout. Note that the page is not responsive, so it may not display correctly on different screen sizes.
+
+This site is cool.
